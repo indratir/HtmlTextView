@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "HtmlTextView"
   spec.version      = "0.0.1"
-  spec.summary      = "Easy parse HTML text in Swift UITextView."
+  spec.summary      = "Easy parse HTML text in Swift UITextView"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  HtmlTextView will help you to parse HTML text in UITextView
+  HtmlTextView will help you to parse HTML text in UITextView.
                    DESC
 
-  spec.homepage     = "http://github.com/indratir/HtmlTextView"
+  spec.homepage     = "https://github.com/indratir/HtmlTextView"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -53,10 +53,10 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Indra Tirta Nugraha" => "tirta777@gmail.com" }
+  spec.author             = { "indratir" => "tirta777@gmail.com" }
   # Or just: spec.author    = "Indra Tirta Nugraha"
   # spec.authors            = { "Indra Tirta Nugraha" => "tirta777@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/Indra Tirta Nugraha"
+  spec.social_media_url   = "https://twitter.com/indratir"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -65,10 +65,11 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "12.1"
+  spec.swift_version = "5"
 
   #  When using multiple platforms
-  spec.ios.deployment_target = "12.1"
+  # spec.ios.deployment_target = "12.1"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -80,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/HtmlTextView.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/indratir/HtmlTextView.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "HtmlTextView/**/*.{h,m,swift}"
 
   # spec.public_header_files = "Classes/**/*.h"
 

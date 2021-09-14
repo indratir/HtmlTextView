@@ -86,7 +86,7 @@ class HtmlTextView: UITextView {
     }
     
     private func getTextColor() -> UIColor {
-        return textColor ?? .label
+        return textColor ?? .black
     }
     
     private func getFont() -> UIFont {
